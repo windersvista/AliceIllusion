@@ -62,7 +62,7 @@ class AliceIllusion implements IPreAkiLoadMod, IPostDBLoadMod {
         this.addTraderToLocales(tables);
 
         this.logger.debug(`[${this.mod}] postDb Loaded`);
-        this.logger.logWithColor(`${pkg.name} [LOADED]: WHO is AliceIllusion?`, LogTextColor.BLUE, LogBackgroundColor.YELLOW);
+        this.logger.logWithColor(`${pkg.name} 《诺文斯克潜行者》整合包专属商人已加载`, LogTextColor.BLUE, LogBackgroundColor.YELLOW);
     }
 
     private registerProfileImage(preAkiModLoader: PreAkiModLoader, imageRouter: ImageRouter): void {
@@ -95,7 +95,7 @@ class AliceIllusion implements IPreAkiLoadMod, IPostDBLoadMod {
             locale[`${baseJson._id} FirstName`] = "AliceIllusion";
             locale[`${baseJson._id} Nickname`] = baseJson.nickname;
             locale[`${baseJson._id} Location`] = baseJson.location;
-            locale[`${baseJson._id} Description`] = "A ghost?";
+            locale[`${baseJson._id} Description`] = "";
         });
     }
 
