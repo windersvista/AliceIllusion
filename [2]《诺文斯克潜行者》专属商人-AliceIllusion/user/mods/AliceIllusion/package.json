@@ -1,9 +1,9 @@
 {
-    "name": "The_Machine",
-    "version": "0.0.6",
+    "name": "AliceIllusion",
+    "version": "0.0.1",
     "main": "src/mod.js",
     "license": "MIT",
-    "author": "TeejayMerks",
+    "author": "windersvista",
     "akiVersion": "3.8.x",
     "scripts": {
         "setup": "npm i",
