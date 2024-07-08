@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/brace-style */
 
 /*
-* If you are reading this, I hope you are enjoying Scorpion
+* If you are reading this, I hope you are enjoying AI
 * 
 * 
 * I have worked on this mod for several months and have tried my best to make it as easy to read and clean as possible
@@ -48,38 +48,10 @@ import weaponCompatibility = require("../config/ModdedWeaponCompatibility.json")
 
 let realismDetected: boolean;
 const loadMessage = {
-    0: "Scorpion has brought his crew into Tarkov",
-    1: "One of us..one of us..one of us",
-    2: "Welcome to the team, you're one of us meow ♡",
-    3: "Call Kenny Loggins because you're in the danger zone",
-    4: "Can I offer you a nice egg in this trying time?",
-    5: "Good news everyone! We have over 100 quests!",
-    6: "Never half-ass two things. Whole-ass one thing.",
-    7: "Thanks for signing up for Cat Facts! You will now receive fun daily facts about CATS!",
-    8: "Thanks for signing up for Dog Facts! You will now receive fun daily facts about DOGS!",
-    9: "A big ball of wibbly wobbly, timey wimey stuff",
-    10: "(╯°□°)╯︵ ┻━┻ ",
-    11: "┬─┬ノ( º _ ºノ)",
-    12: "Treat others how you want to be treated",
-    13: "No act of kindness, no matter how small, is ever wasted",
-    14: "Reticulating Splines...",
-    15: "Unfolding Foldy Chairs...",
-    16: "Pressurizing Fruit Punch Barrel Hydraulics...",
-    17: "Fabricating Imaginary Infrastructure...",
-    18: "We apologize again for the fault in the subtitles. Those responsible for sacking the people who have just been sacked, have been sacked.",
-    19: "Are you suggesting coconuts migrate?",
-    20: "We are now the knights who say ekki-ekki-ekki-pitang-zoom-boing!",
-    21: "Knight jumps queen! Bishop jumps queen! Pawns jump queen!",
-    22: "Hello. My name is Inigo Montoya. You killed my father. Prepare to die.",
-    23: "I spent the last few years building up an immunity to iocane powder.",
-    24: "Rodents Of Unusual Size? I don't think they exist.",
-    25: "Always try to be nice, but never fail to be kind",
-    26: "Never be cruel, never be cowardly",
-    27: "Who do I need to ban? (◣_◢)",
-    28: "This loading message is sponsored by Raid: Shadow Legends"
+    0: "Who is AliceIllusion?"
 }
 
-class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
+class AliceIllusion implements IPreAkiLoadMod, IPostDBLoadMod
 {
     private mod: string
     private logger: ILogger
@@ -87,12 +59,12 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     private fluentAssortCreator: FluentAssortCreator    
 
     private static vfs = container.resolve<VFS>("VFS");    
-    private static config: Config = jsonc.parse(Scorpion.vfs.readFile(path.resolve(__dirname, "../config/config.jsonc")));
+    private static config: Config = jsonc.parse(AliceIllusion.vfs.readFile(path.resolve(__dirname, "../config/config.jsonc")));
 
     // Set the name of mod for logging purposes
     constructor() 
     {
-        this.mod = "acidphantasm-scorpion"; 
+        this.mod = "AliceIllusion"; 
     }
 
     /*
@@ -120,9 +92,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
         
         // Set config values to local variables for validation & use
-        let minRefresh = Scorpion.config.traderRefreshMin;
-        let maxRefresh = Scorpion.config.traderRefreshMax;
-        const addToFlea = Scorpion.config.addTraderToFlea;
+        let minRefresh = AliceIllusion.config.traderRefreshMin;
+        let maxRefresh = AliceIllusion.config.traderRefreshMax;
+        const addToFlea = AliceIllusion.config.addTraderToFlea;
         if (minRefresh >= maxRefresh || maxRefresh <= 2)
         {
             minRefresh = 1800;
@@ -133,7 +105,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
         this.traderHelper = new TraderHelper();
         this.fluentAssortCreator = new FluentAssortCreator(hashUtil, this.logger);
-        this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "scorpion.jpg");
+        this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "AliceIllusion.jpg");
         this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, minRefresh, maxRefresh);
 
         // Add trader to trader enum
@@ -150,24 +122,24 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         }
 
         dynamicRouterModService.registerDynamicRouter(
-            "ScorpionRefreshStock",
+            "AliceIllusionRefreshStock",
             [
                 {
-                    url: "/client/items/prices/Scorpion",
+                    url: "/client/items/prices/AliceIllusion",
                     action: (url, info, sessionId, output) => 
                     {
-                        const trader = databaseServer.getTables().traders.Scorpion;
+                        const trader = databaseServer.getTables().traders.AliceIllusion;
                         const assortItems = trader.assort.items;
                         if (!realismDetected)
                         {
-                            if (Scorpion.config.randomizeBuyRestriction)
+                            if (AliceIllusion.config.randomizeBuyRestriction)
                             {
-                                if (Scorpion.config.debugLogging) {this.logger.info(`[${this.mod}] Refreshing Scorpion Stock with Randomized Buy Restrictions.`);}
+                                if (AliceIllusion.config.debugLogging) {this.logger.info(`[${this.mod}] Refreshing AliceIllusion Stock with Randomized Buy Restrictions.`);}
                                 this.randomizeBuyRestriction(assortItems);
                             }
-                            if (Scorpion.config.randomizeStockAvailable)
+                            if (AliceIllusion.config.randomizeStockAvailable)
                             {
-                                if (Scorpion.config.debugLogging) {this.logger.info(`[${this.mod}] Refreshing Scorpion Stock with Randomized Stock Availability.`);}
+                                if (AliceIllusion.config.debugLogging) {this.logger.info(`[${this.mod}] Refreshing AliceIllusion Stock with Randomized Stock Availability.`);}
                                 this.randomizeStockAvailable(assortItems);
                             }
                         }
@@ -213,12 +185,12 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         this.pushProductionUnlocks();
 
         //Update Assort
-        if (Scorpion.config.priceMultiplier !== 1){this.setPriceMultiplier(assortPriceTable);}
-        if (Scorpion.config.randomizeBuyRestriction){this.randomizeBuyRestriction(assortItemTable);}
-        if (Scorpion.config.randomizeStockAvailable){this.randomizeStockAvailable(assortItemTable);}
-        if (Scorpion.config.unlimitedStock){this.setUnlimitedStock(assortItemTable);}
-        if (Scorpion.config.unlimitedBuyRestriction){this.setUnlimitedBuyRestriction(assortItemTable);}
-        if (Scorpion.config.removeLoyaltyRestriction){this.disableLoyaltyRestrictions(assortLoyaltyTable);}
+        if (AliceIllusion.config.priceMultiplier !== 1){this.setPriceMultiplier(assortPriceTable);}
+        if (AliceIllusion.config.randomizeBuyRestriction){this.randomizeBuyRestriction(assortItemTable);}
+        if (AliceIllusion.config.randomizeStockAvailable){this.randomizeStockAvailable(assortItemTable);}
+        if (AliceIllusion.config.unlimitedStock){this.setUnlimitedStock(assortItemTable);}
+        if (AliceIllusion.config.unlimitedBuyRestriction){this.setUnlimitedBuyRestriction(assortItemTable);}
+        if (AliceIllusion.config.removeLoyaltyRestriction){this.disableLoyaltyRestrictions(assortLoyaltyTable);}
 
         // Set local variable for assort to pass to traderHelper regardless of priceMultiplier config
         const newAssort = assortJson
@@ -231,12 +203,12 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Add trader to locale file, ensures trader text shows properly on screen
         this.traderHelper.addTraderToDb(baseJson, tables, jsonUtil, newAssort);
         tables.traders[baseJson._id].questassort = questJson;
-        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
+        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "AliceIllusion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
 
         this.logger.debug(`[${this.mod}] loaded... `);
 
         const timeTaken = performance.now() - start;
-        if (Scorpion.config.debugLogging) {logger.log(`[${this.mod}] Trader load took ${timeTaken.toFixed(3)}ms.`, "cyan");}
+        if (AliceIllusion.config.debugLogging) {logger.log(`[${this.mod}] Trader load took ${timeTaken.toFixed(3)}ms.`, "cyan");}
 
         logger.log(`[${this.mod}] ${this.getRandomLoadMessage()}`, "cyan");
     }
@@ -251,7 +223,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     private setRealismDetection(i: boolean) // Except this one. This is dumb. I'll fix it eventually.
     {
         realismDetected = i;
-        if (realismDetected && Scorpion.config.randomizeBuyRestriction || realismDetected && Scorpion.config.randomizeStockAvailable)
+        if (realismDetected && AliceIllusion.config.randomizeBuyRestriction || realismDetected && AliceIllusion.config.randomizeStockAvailable)
         {
             this.logger.log(`[${this.mod}] SPT-Realism detected, disabling randomizeBuyRestriction and/or randomizeStockAvailable:`, "cyan");
         }
@@ -259,7 +231,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
     private setPriceMultiplier (assortPriceTable)
     {
-        let priceMultiplier = Scorpion.config.priceMultiplier;
+        let priceMultiplier = AliceIllusion.config.priceMultiplier;
         if (priceMultiplier <= 0) 
         {
             priceMultiplier = 1;
@@ -271,13 +243,13 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             {
                 if (item[0].count <= 15)
                 {
-                    if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] itemID: [${itemID}] No price change, it's a barter trade.`, "cyan");}
+                    if (AliceIllusion.config.debugLogging) {this.logger.log(`[${this.mod}] itemID: [${itemID}] No price change, it's a barter trade.`, "cyan");}
                     continue;
                 }
                 const count = item[0].count;
                 const newPrice = Math.round(count * priceMultiplier);
                 item[0].count = newPrice
-                if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] itemID: [${itemID}] Price Changed to: [${newPrice}]`, "cyan");}
+                if (AliceIllusion.config.debugLogging) {this.logger.log(`[${this.mod}] itemID: [${itemID}] Price Changed to: [${newPrice}]`, "cyan");}
             }
         } 
     }
@@ -299,7 +271,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                 
                 assortItemTable[item].upd.BuyRestrictionMax = newRestriction;
     
-                if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Buy Restriction Changed to: [${newRestriction}]`, "cyan");}
+                if (AliceIllusion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Buy Restriction Changed to: [${newRestriction}]`, "cyan");}
             }
         }
     }
@@ -315,14 +287,14 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                 {
                     continue // Skip setting count, it's a weapon attachment or armour plate
                 }
-                const outOfStockRoll = randomUtil.getChance100(Scorpion.config.outOfStockChance);
+                const outOfStockRoll = randomUtil.getChance100(AliceIllusion.config.outOfStockChance);
                 
                 if (outOfStockRoll)
                 {
                     const itemID = assortItemTable[item]._id;
                     assortItemTable[item].upd.StackObjectsCount = 0;
 
-                    if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Marked out of stock`, "cyan");}
+                    if (AliceIllusion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Marked out of stock`, "cyan");}
                 } 
                 else
                 {
@@ -331,7 +303,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                     const newStock = randomUtil.randInt(2, (originalStock*0.5));
                     assortItemTable[item].upd.StackObjectsCount = newStock;
 
-                    if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Stock Count changed to: [${newStock}]`, "cyan");}
+                    if (AliceIllusion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Stock Count changed to: [${newStock}]`, "cyan");}
                 }
             }
         }
@@ -348,7 +320,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             assortItemTable[item].upd.StackObjectsCount = 9999999;
             assortItemTable[item].upd.UnlimitedCount = true;
         }
-        if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item stock counts are now unlimited`, "cyan");}
+        if (AliceIllusion.config.debugLogging) {this.logger.log(`[${this.mod}] Item stock counts are now unlimited`, "cyan");}
     }
 
     private setUnlimitedBuyRestriction(assortItemTable)
@@ -362,7 +334,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             delete assortItemTable[item].upd.BuyRestrictionMax;
             delete assortItemTable[item].upd.BuyRestrictionCurrent;
         }
-        if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item buy restrictions are now unlimited`, "cyan");}
+        if (AliceIllusion.config.debugLogging) {this.logger.log(`[${this.mod}] Item buy restrictions are now unlimited`, "cyan");}
     }
 
     private disableLoyaltyRestrictions(assortLoyaltyTable)
@@ -371,7 +343,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         {
             delete assortLoyaltyTable[item];
         }
-        if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] All Loyalty Level requirements are removed`, "cyan");}
+        if (AliceIllusion.config.debugLogging) {this.logger.log(`[${this.mod}] All Loyalty Level requirements are removed`, "cyan");}
     }
 
     private modDetection()
@@ -409,7 +381,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         }
 
         // This is completely unneccessary and I'll fix it, eventually - probably
-        if (Scorpion.config.randomizeBuyRestriction || Scorpion.config.randomizeStockAvailable)
+        if (AliceIllusion.config.randomizeBuyRestriction || AliceIllusion.config.randomizeStockAvailable)
         {
             this.setRealismDetection(realismCheck);
         }
@@ -432,70 +404,70 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         if (weaponCompatibility.AssaultRifles.length >= 1)
         {
             weaponType = weaponCompatibility.AssaultRifles;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_1_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_1_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.SubmachineGuns.length >= 1)
         {
             weaponType = weaponCompatibility.SubmachineGuns;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_2_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_2_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Snipers.length >= 1)
         {
             weaponType = weaponCompatibility.Snipers;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_3_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_3_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Marksman.length >= 1)
         {
             weaponType = weaponCompatibility.Marksman;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_4_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_4_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Shotguns.length >= 1)
         {
             weaponType = weaponCompatibility.Shotguns;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_5_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_5_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Pistols.length >= 1)
         {
             weaponType = weaponCompatibility.Pistols;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_6_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_6_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.LargeMachineGuns.length >= 1)
         {
             weaponType = weaponCompatibility.LargeMachineGuns;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_7_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_7_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Carbines.length >= 1)
         {
             weaponType = weaponCompatibility.Carbines;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_8_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_8_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Melee.length >= 1)
         {
             weaponType = weaponCompatibility.Melee;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_9_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_9_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Explosives.length >= 1)
         {
             weaponType = weaponCompatibility.Explosives;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_10_"));
+            questType = quests.filter(x => x._id.includes("AliceIllusion_10_10_"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
@@ -516,7 +488,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                     }
                 }
             }
-            if (Scorpion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questType[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
+            if (AliceIllusion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questType[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
         }
     }
 
@@ -557,4 +529,4 @@ interface Config
     debugLogging: boolean,
 }
 
-module.exports = { mod: new Scorpion() }
+module.exports = { mod: new AliceIllusion() }

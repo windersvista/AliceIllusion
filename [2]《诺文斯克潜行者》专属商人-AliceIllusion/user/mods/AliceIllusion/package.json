@@ -1,9 +1,9 @@
 {
-    "name": "Scorpion",
+    "name": "AliceIllusion",
     "version": "0.10.0",
     "main": "src/mod.js",
     "license": "MIT",
-    "author": "acidphantasm",
+    "author": "windersvista",
     "akiVersion": "~3.8",
     "loadBefore": [],
     "loadAfter": [

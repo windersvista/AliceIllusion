@@ -1,5 +1,5 @@
 {
-    "_id": "Scorpion",
+    "_id": "AliceIllusion",
     "working": true,
     "availableInRaid": false,
     "items_buy": {
@@ -27,11 +27,11 @@
         ]
     },
     "customization_seller": false,
-    "name": "Scorpion",
+    "name": "AliceIllusion",
     "surname": "",
-    "nickname": "Scorpion",
-    "location": "You should get the hell out of here before you're seen.",
-    "avatar": "/files/trader/avatar/scorpion.jpg",
+    "nickname": "AliceIllusion",
+    "location": "she just like a ghost",
+    "avatar": "/files/trader/avatar/AliceIllusion.jpg",
     "balance_rub": 5000000,
     "balance_dol": 23000,
     "balance_eur": 20000,
