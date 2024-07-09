@@ -111,6 +111,60 @@ class AliceIllusion implements IPreAkiLoadMod, IPostDBLoadMod {
             }
         });
     }
+
+    private getPresets(container: DependencyContainer, assortTable, currency, profiles) {
+        const jsonUtil = container.resolve<JsonUtil>("JsonUtil");
+        const RagfairPriceService = container.resolve<RagfairPriceService>("RagfairPriceService");
+        let pool = [];
+        for (let p in (profiles || [])) {
+            for (let wbk in profiles[p].userbuilds.weaponBuilds) {
+                let wb = profiles[p].userbuilds.weaponBuilds[wbk];
+                let preItems = wb.items;
+                let id = preItems[0]._id;
+                let tpl = preItems[0]._tpl;
+                if (pool.includes(id)) {
+                    continue;
+                }
+                pool.push(id)
+                preItems[0] = {
+                    "_id": id,
+                    "_tpl": tpl,
+                    "parentId": "hideout",
+                    "slotId": "hideout",
+                    "BackgroundColor": "yellow",
+                    "upd": {
+                        "UnlimitedCount": true,
+                        "StackObjectsCount": 2000
+                    },
+                    "preWeapon": true
+                };
+                let preItemsObj = jsonUtil.clone(preItems);
+                for (let preItemObj of preItemsObj) {
+                    assortTable.items.push(preItemObj);
+                }
+                let config;
+                try {
+                    config = require(`../config/config.json`);
+                } catch (e) {
+                }
+                let price = (config || {}).cost || 7500;
+                try {
+                    price = RagfairPriceService.getDynamicOfferPriceForOffer(preItems,currency);
+                } catch (error) {
+                    
+                }
+                let offerRequire = [
+                    {
+                        "count": price,
+                        "_tpl": currency
+                    }
+                ];
+                assortTable.barter_scheme[id] = [offerRequire];
+                assortTable.loyal_level_items[id] = 1;
+            }
+        };
+        return assortTable;
+
 }
 
 module.exports = { mod: new AliceIllusion() };
