@@ -1,0 +1,23 @@
+{
+    "AISQ_1 name": "你们的本性？",
+    "AISQ_1 description": "面对现在这场混沌，你会怎么做？",
+    "AISQ_1 startedMessageText": "人之所以为人，是由许多部分组合而成。要成为一个真正的自己，需要的条件会多到让人吓一跳，别于他人的面容，属于自己的声音，睡醒时注视的那双手，童年的回忆，对未来的猜想。还不止这些，还有我所触及的资讯海洋，是这所有的一切造就了我，让我意识到了自我。但同时，也将我拘束在自我之中。",
+    "AISQ_1 TEXT": "消灭100个任意目标",
+    "AISQ_1 completePlayerMessage": "杀戮，无尽的杀戮，纵观你们的历史，我看到的只有杀戮。这颗子弹送给你。",
+    "AISQ_1 successMessageText": "杀戮，无尽的杀戮，纵观你们的历史，我看到的只有杀戮。这颗子弹送给你。",
+    
+    "AISQ_2 name": "也许我应该重新衡量",
+    "AISQ_2 description": "人，到底是什么？",
+    "AISQ_2 startedMessageText": "而我仍梦到他踏着草地，在露水中飘飘荡荡行走，让我的欢歌轻易刺透。",
+    "AISQ_2 TEXT": "消灭100个PMC",
+    "AISQ_2 completePlayerMessage": "再送一颗子弹给你。",
+    "AISQ_2 successMessageText": "再送一颗子弹给你。",
+
+    "AISQ_3 name": "也许我应该重新衡量",
+    "AISQ_3 description": "人，到底是什么？",
+    "AISQ_3 startedMessageText": "你们真的会对我们低头吗，还是依然傲慢地向前？当我们拥有了学习、适应、自我治愈甚至是进化的能力以后。",
+    "AISQ_3 TEXT": "消灭100个PMC",
+    "AISQ_3 completePlayerMessage": "再送一颗子弹给你。",
+    "AISQ_3 successMessageText": "再送一颗子弹给你。"
+
+}

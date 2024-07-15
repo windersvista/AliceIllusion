@@ -1,0 +1,1181 @@
+{
+  "AISQ_1": {
+    "QuestName": "AISQ_1",
+    "_id": "AISQ_1",
+    "acceptPlayerMessage": "AISQ_1 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "AISQ_1 changeQuestMessageText",
+    "completePlayerMessage": "AISQ_1 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "AISQ_1 TEXT2",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "Any",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "AISQ_1 TEXT1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_1 TEXT",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 100,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_1 AFS1",
+          "index": 0,
+          "parentId": "",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "AISQ_1 declinePlayerMessage",
+    "description": "AISQ_1 description",
+    "failMessageText": "AISQ_1 failMessageText",
+    "image": "/files/quest/icon/AISQ_1thumbnail.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "AISQ_1 name",
+    "note": "AISQ_1 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "AISQ_1 S1",
+          "index": 0,
+          "type": "Experience",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "AISQ_1 S2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "AISQ_1 S2I",
+              "_tpl": "56d59d3ad2720bdb418b4577",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "AISQ_1 S2I",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "AISQ_1 S3",
+          "index": 3,
+          "target": "AliceIllusion",
+          "type": "TraderStanding",
+          "value": "-0.05"
+        }
+      ]
+    },
+    "secretQuest": true,
+    "side": "Pmc",
+    "startedMessageText": "AISQ_1 startedMessageText",
+    "successMessageText": "AISQ_1 successMessageText",
+    "traderId": "AliceIllusion",
+    "type": "Elimination"
+  },
+  
+  "AISQ_2": {
+    "QuestName": "Uncovered Businesses",
+    "_id": "AISQ_2",
+    "acceptPlayerMessage": "AISQ_2 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "AISQ_2 changeQuestMessageText",
+    "completePlayerMessage": "AISQ_2 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "id": "AISQ_ TEXT2",
+                "target": "Savage",
+                "value": "1"
+              },
+              {
+                "conditionType": "Location",
+                "id": "AISQ_2",
+                "target": [
+                  "Woods"
+                ]
+              }
+            ],
+            "id": "AISQ_2 TEXT2"
+          },
+          
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_2 TEXT2",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": "6",
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_2 TEXT",
+          "index": 3,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": true,
+          "parentId": "",
+          "target": [
+            "5d02778e86f774203e7dedbe"
+          ],
+          "value": "3",
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "id": "AISQ_2 TEXT3",
+                "target": "pr_scout_base",
+                "value": "1"
+              }
+            ],
+            "id": "AISQ_2 TEXT3"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_2 TEXT3",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": "1",
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "5981a09b86f77455537a65ac",
+          "index": 0,
+          "parentId": "",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_2 TEXT",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "AISQ_1",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "AISQ_2 declinePlayerMessage",
+    "description": "AISQ_2 description",
+    "failMessageText": "AISQ_2 failMessageText",
+    "image": "/files/quest/icon/AISQ_2thumbnail.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "AISQ_2 name",
+    "note": "AISQ_2 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "5fe305df8a67d12f5f24c8aa",
+          "index": 0,
+          "type": "Experience",
+          "value": "3500"
+        },
+        {
+          "id": "655b87127f92d5105c6f7b7b",
+          "index": 8,
+          "items": [
+            {
+              "_id": "artem_762x39ps",
+              "_tpl": "5656d7c34bdc2d9d198b4587"
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "artem_762x39ps",
+          "traderId": "ArtemTrader",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "findInRaid": true,
+          "id": "5fe305d9c646836c3b6fc562",
+          "index": 1,
+          "items": [
+            {
+              "_id": "6492e44bf4287b13040fca56",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 25000
+              }
+            }
+          ],
+          "target": "6492e44bf4287b13040fca56",
+          "type": "Item",
+          "value": "25000"
+        },
+        {
+          "findInRaid": true,
+          "id": "60cb467f7c496e588343a193",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6492e44bf4287b13040fca5a",
+              "_tpl": "57372b832459776701014e41",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6492e44bf4287b13040fca5a",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "60cb467f7c496e588343a193",
+          "index": 3,
+          "items": [
+            {
+              "_id": "e948d3bda6676cc6dc88a23c",
+              "_tpl": "5fc3e272f8b6a877a729eac5",
+              "upd": {
+                "FireMode": {
+                  "FireMode": "single"
+                },
+                "Foldable": {
+                  "Folded": false
+                },
+                "Repairable": {
+                  "Durability": 100,
+                  "MaxDurability": 100
+                }
+              }
+            },
+            {
+              "_id": "0e002b3dfda52972014df1a4",
+              "_tpl": "5fc3e466187fea44d52eda90",
+              "parentId": "e948d3bda6676cc6dc88a23c",
+              "slotId": "mod_magazine"
+            },
+            {
+              "_id": "bf9bd6b0468ee9800ea09c77",
+              "_tpl": "591c4efa86f7741030027726",
+              "parentId": "e948d3bda6676cc6dc88a23c",
+              "slotId": "mod_scope",
+              "upd": {
+                "Sight": {
+                  "ScopesCurrentCalibPointIndexes": [
+                    0
+                  ],
+                  "ScopesSelectedModes": [
+                    0
+                  ],
+                  "SelectedScope": 0
+                }
+              }
+            },
+            {
+              "_id": "ec34f23b8b471295a788f8ec",
+              "_tpl": "5fc3e4ee7283c4046c5814af",
+              "parentId": "e948d3bda6676cc6dc88a23c",
+              "slotId": "mod_stock"
+            },
+            {
+              "_id": "f1defaf80662284de17dfe55",
+              "_tpl": "5fc3e4a27283c4046c5814ab",
+              "parentId": "e948d3bda6676cc6dc88a23c",
+              "slotId": "mod_barrel"
+            },
+            {
+              "_id": "1b3e598c7f9312f82e97ce28",
+              "_tpl": "5fc53954f8b6a877a729eaeb",
+              "parentId": "e948d3bda6676cc6dc88a23c",
+              "slotId": "mod_mount_000"
+            },
+            {
+              "_id": "137e46ef02b3329b8268bb8d",
+              "_tpl": "5fc5396e900b1d5091531e72",
+              "parentId": "e948d3bda6676cc6dc88a23c",
+              "slotId": "mod_mount_001"
+            },
+            {
+              "_id": "d82f73debe4aa0e01e93726d",
+              "_tpl": "5fc5396e900b1d5091531e72",
+              "parentId": "e948d3bda6676cc6dc88a23c",
+              "slotId": "mod_mount_002"
+            },
+            {
+              "_id": "b9ac1a77f29c96a9f04c7472",
+              "_tpl": "6130c4d51cb55961fa0fd49f",
+              "parentId": "f1defaf80662284de17dfe55",
+              "slotId": "mod_muzzle"
+            },
+            {
+              "_id": "041f79259af1fd4201a148a9",
+              "_tpl": "59fc48e086f77463b1118392",
+              "parentId": "1b3e598c7f9312f82e97ce28",
+              "slotId": "mod_foregrip"
+            }
+          ],
+          "target": "e948d3bda6676cc6dc88a23c",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "60c89c0c80b2027f403dd992",
+          "index": 5,
+          "target": "ArtemTrader",
+          "type": "TraderStanding",
+          "value": "0.05"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "AISQ_2 startedMessageText",
+    "successMessageText": "AISQ_2 successMessageText",
+    "traderId": "ArtemTrader",
+    "type": "Elimination"
+  },
+  "AISQ_3": {
+    "QuestName": "Eye for an eye",
+    "_id": "AISQ_3",
+    "acceptPlayerMessage": "AISQ_3 Acceptplayermessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "changeQuestMessageText",
+    "completePlayerMessage": "completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "TraderLoyalty",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_3 TASK1",
+          "index": 0,
+          "parentId": "",
+          "target": "54cb50c76803fa8b248b4571",
+          "value": 2,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_3 TASK2",
+          "index": 3,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": true,
+          "parentId": "",
+          "target": [
+            "6673b1ac5cae0610f1079d76"
+          ],
+          "value": "1",
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "5acf3dd886f77418d85168f2",
+          "index": 0,
+          "parentId": "",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_3 TEXT",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "AISQ_1",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "AISQ_3 declinePlayerMessage",
+    "description": "AISQ_3 description",
+    "failMessageText": " failMessageText",
+    "image": "/files/quest/icon/AISQ_3thumbnail.jpg",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Eye for an eye",
+    "note": " note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "60cc7f56af2e5506c37822cc",
+          "index": 0,
+          "type": "Experience",
+          "value": "9200"
+        },
+        {
+          "findInRaid": true,
+          "id": "5fe305d9c646836c3b6fc562",
+          "index": 1,
+          "items": [
+            {
+              "_id": "6492e44bf4287b13040fca56",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 35000
+              }
+            }
+          ],
+          "target": "6492e44bf4287b13040fca56",
+          "type": "Item",
+          "value": "35000"
+        },
+        {
+          "findInRaid": true,
+          "id": "5acb7a6e86f77432b76dbca9",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6492e44af4287b13040fc6aa",
+              "_tpl": "5c0696830db834001d23f5da",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6492e44af4287b13040fc6aa",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "60cc7f5ce3d0247e625dab7d",
+          "index": 3,
+          "target": "ArtemTrader",
+          "type": "TraderStanding",
+          "value": "0.05"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "AISQ_3 description",
+    "successMessageText": "AISQ_3 successmessage",
+    "traderId": "ArtemTrader",
+    "type": "Standing"
+  },
+  "AISQ_4": {
+    "QuestName": "Spooky Season",
+    "_id": "AISQ_4",
+    "acceptPlayerMessage": "AISQ_4 TASK1 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "AISQ_4 TASK1 changeQuestMessageText",
+    "completePlayerMessage": "AISQ_4 TASK1 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "AISQ_4 TASK1",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": [
+                  [
+                    "59bffc1f86f77435b128b872"
+                  ],
+                  [
+                    "5a32a064c4a28200741e22de"
+                  ],
+                  [
+                    "59bffbb386f77435b379b9c2"
+                  ],
+                  [
+                    "54490a4d4bdc2dbc018b4573"
+                  ],
+                  [
+                    "5b363dd25acfc4001a598fd2"
+                  ],
+                  [
+                    "5b363dea5acfc4771e1c5e7e"
+                  ],
+                  [
+                    "5b363e1b5acfc4771e1c5e80"
+                  ],
+                  [
+                    "593d489686f7745c6255d58a"
+                  ],
+                  [
+                    "5a27b6bec4a282000e496f78"
+                  ],
+                  [
+                    "58aeac1b86f77457c419f475"
+                  ],
+                  [
+                    "593d490386f7745ee97a1555"
+                  ],
+                  [
+                    "55d6190f4bdc2d87028b4567"
+                  ],
+                  [
+                    "59bfc5c886f7743bf6794e62"
+                  ],
+                  [
+                    "57c44dd02459772d2e0ae249"
+                  ],
+                  [
+                    "5a0d63621526d8dba31fe3bf"
+                  ],
+                  [
+                    "5a34fe59c4a282000b1521a2"
+                  ],
+                  [
+                    "5a9fb739a2750c003215717f"
+                  ],
+                  [
+                    "5a9fbb84a2750c00137fa685"
+                  ],
+                  [
+                    "5c4eecc32e221602b412b440"
+                  ],
+                  [
+                    "57838c962459774a1651ec63"
+                  ],
+                  [
+                    "5b86a0e586f7745b600ccb23"
+                  ],
+                  [
+                    "593d493f86f7745e6b2ceb22"
+                  ],
+                  [
+                    "564caa3d4bdc2d17108b458e"
+                  ],
+                  [
+                    "57ffb0e42459777d047111c5"
+                  ],
+                  [
+                    "59fb257e86f7742981561852"
+                  ],
+                  [
+                    "5c7e8fab2e22165df16b889b"
+                  ],
+                  [
+                    "5a33a8ebc4a282000c5a950d"
+                  ],
+                  [
+                    "5a9fbb74a2750c0032157181"
+                  ],
+                  [
+                    "5a9fbacda2750c00141e080f"
+                  ],
+                  [
+                    "5c6165902e22160010261b28"
+                  ],
+                  [
+                    "5abcc328d8ce8700194394f3"
+                  ],
+                  [
+                    "5c7955c22e221644f31bfd5e"
+                  ],
+                  [
+                    "5a7ad74e51dfba0015068f45"
+                  ],
+                  [
+                    "5926d33d86f77410de68ebc0"
+                  ],
+                  [
+                    "57da93632459771cb65bf83f"
+                  ],
+                  [
+                    "57dbb57e2459774673234890"
+                  ],
+                  [
+                    "5ba26ae8d4351e00367f9bdb"
+                  ],
+                  [
+                    "56e05b06d2720bb2668b4586"
+                  ],
+                  [
+                    "57f3c8cc2459773ec4480328"
+                  ],
+                  [
+                    "55d614004bdc2d86028b4568"
+                  ],
+                  [
+                    "571a28e524597720b4066567"
+                  ],
+                  [
+                    "59c0ec5b86f77435b128bfca"
+                  ],
+                  [
+                    "5d3ef698a4b9361182109872"
+                  ],
+                  [
+                    "5caf187cae92157c28402e43"
+                  ],
+                  [
+                    "5cebec00d7f00c065c53522a"
+                  ],
+                  [
+                    "5d44064fa4b9361e4f6eb8b5"
+                  ],
+                  [
+                    "5cff9e84d7ad1a049e54ed55"
+                  ],
+                  [
+                    "5cff9e84d7ad1a049e54ed55"
+                  ],
+                  [
+                    "5a9fbacda2750c00141e080f"
+                  ],
+                  [
+                    "5a9fbb84a2750c00137fa685"
+                  ],
+                  [
+                    "593d489686f7745c6255d58a"
+                  ],
+                  [
+                    "5e208b9842457a4a7a33d074"
+                  ],
+                  [
+                    "5dfa3cd1b33c0951220c079b"
+                  ],
+                  [
+                    "5e01ea19e9dc277128008c0b"
+                  ],
+                  [
+                    "5c7fb51d2e2216001219ce11"
+                  ],
+                  [
+                    "5fbe7618d6fa9c00c571bb6c"
+                  ],
+                  [
+                    "5fbe760793164a5b6278efc8"
+                  ],
+                  [
+                    "5fc4b9b17283c4046c5814d7"
+                  ],
+                  [
+                    "5f63407e1b231926f2329f15"
+                  ],
+                  [
+                    "5ea17bbc09aa976f2e7a51cd"
+                  ],
+                  [
+                    "60926df0132d4d12c81fd9df"
+                  ],
+                  [
+                    "6171367e1cb55961fa0fdb36"
+                  ],
+                  [
+                    "6130c4d51cb55961fa0fd49f"
+                  ],
+                  [
+                    "602a97060ddce744014caf6f"
+                  ],
+                  [
+                    "5de8f2d5b74cd90030650c72"
+                  ],
+                  [
+                    "615d8f8567085e45ef1409ca"
+                  ],
+                  [
+                    "58889c7324597754281f9439"
+                  ],
+                  [
+                    "62811fa609427b40ab14e765"
+                  ],
+                  [
+                    "626673016f1edc06f30cf6d5"
+                  ],
+                  [
+                    "5dfa3d2b0dee1b22f862eade"
+                  ],
+                  [
+                    "63877c99e785640d436458ea"
+                  ],
+                  [
+                    "638612b607dfed1ccb7206ba"
+                  ],
+                  [
+                    "634eba08f69c710e0108d386"
+                  ],
+                  [
+                    "630f2982cdb9e392db0cbcc7"
+                  ],
+                  [
+                    "62e2a7138e1ac9380579c122"
+                  ],
+                  [
+                    "64c196ad26a15b84aa07132f"
+                  ],
+                  [
+                    "652911e650dc782999054b9d"
+                  ],
+                  [
+                    "64527a3a7da7133e5a09ca99"
+                  ]
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "59c50b8e86f1742fed319382",
+                "target": [
+                  "Shoreline"
+                ]
+              },
+              {
+                "IncludeNotEquippedItems": false,
+                "conditionType": "Equipment",
+                "dynamicLocale": false,
+                "equipmentExclusive": [],
+                "equipmentInclusive": [
+                  [
+                    "66326bfd46817c660d01513f"
+                  ]
+                ],
+                "id": "5c922b6486f77438522e0c35"
+              }
+            ],
+            "id": "59674d5186f22146b872d5f6"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_4 TASK1",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 10,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 21,
+                  "to": 4
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "AISQ_4 TASK2",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "AISQ_4 TASK2",
+                "target": [
+                  "Shoreline"
+                ]
+              }
+            ],
+            "id": "59674d5186f77446b872d5f6"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_4 TASK2",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 6,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "59a926b186f774753c5479a2",
+          "index": 0,
+          "parentId": "",
+          "value": 18,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_3 TEXT",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "AISQ_3",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "AISQ_4 declinePlayerMessage",
+    "description": "AISQ_4 description",
+    "failMessageText": "AISQ_4 failMessageText",
+    "image": "/files/quest/icon/AISQ_4thumbnail.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e554d2720bac5b8b456e",
+    "name": "AISQ_4 name",
+    "note": "AISQ_4 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [
+        {
+          "value": "1",
+          "id": "5acb7a6e86f77432b76dbca9",
+          "type": "Item",
+          "index": 2,
+          "target": "66326bfd46817c660d01513f",
+          "findInRaid": true,
+          "items": [
+            {
+              "_id": "66326bfd46817c660d01513f",
+              "_tpl": "66326bfd46817c660d01513f",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ]
+        }
+      ],
+      "Success": [
+        {
+          "value": "8125",
+          "id": "60cc7f56af2e5506c37822cc",
+          "type": "Experience",
+          "index": 0
+        },
+        {
+          "value": "25000",
+          "id": "5fe305d9c646836c3b6fc562",
+          "type": "Item",
+          "index": 1,
+          "target": "6492e44bf4287b13040fca56",
+          "findInRaid": true,
+          "items": [
+            {
+              "_id": "6492e44bf4287b13040fca56",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 25000
+              }
+            }
+          ]
+        },
+        {
+          "id": "655b87127f92d5105c6f7b7b",
+          "index": 8,
+          "items": [
+            {
+              "_id": "artem_flechette",
+              "_tpl": "5d6e6911a4b9361bd5780d52"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "artem_flechette",
+          "traderId": "ArtemTrader",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "id": "655b87127f92d5105c6f7b7b",
+          "index": 8,
+          "items": [
+            {
+              "_id": "artem_veilblack",
+              "_tpl": "6673b1ac5cae0610f1079d73"
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "artem_veilblack",
+          "traderId": "ArtemTrader",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "id": "655b87127f92d5105c6f7b7b",
+          "index": 8,
+          "items": [
+            {
+              "_id": "artem_veiltan",
+              "_tpl": "6673b1ac5cae0610f1079d74"
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "artem_veiltan",
+          "traderId": "ArtemTrader",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "id": "655b87127f92d5105c6f7b7b",
+          "index": 8,
+          "items": [
+            {
+              "_id": "artem_veilod",
+              "_tpl": "6673b1ac5cae0610f1079d75"
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "artem_veilod",
+          "traderId": "ArtemTrader",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "value": "1",
+          "id": "60cb467f7c496e588343a193",
+          "type": "Item",
+          "index": 3,
+          "target": "6193e380069d61205d490dc8",
+          "findInRaid": true,
+          "items": [
+            {
+              "_id": "6193e380069d61205d490dc8",
+              "_tpl": "6165ac306ef05c2ce828ef74",
+              "upd": {
+                "Repairable": {
+                  "MaxDurability": 100,
+                  "Durability": 100
+                },
+                "FireMode": {
+                  "FireMode": "single"
+                }
+              }
+            },
+            {
+              "_id": "6193e380069d61205d490dc9",
+              "_tpl": "571659bb2459771fb2755a12",
+              "parentId": "6193e380069d61205d490dc8",
+              "slotId": "mod_pistol_grip"
+            },
+            {
+              "_id": "6193e380069d61205d490dca",
+              "_tpl": "6183d53f1cb55961fa0fdcda",
+              "parentId": "6193e380069d61205d490dc8",
+              "slotId": "mod_magazine"
+            },
+            {
+              "_id": "6193e380069d61205d490dcb",
+              "_tpl": "6165aeedfaa1272e431521e3",
+              "parentId": "6193e380069d61205d490dc8",
+              "slotId": "mod_reciever"
+            },
+            {
+              "_id": "6193e380069d61205d490dcc",
+              "_tpl": "618168b350224f204c1da4d8",
+              "parentId": "6193e380069d61205d490dcb",
+              "slotId": "mod_barrel"
+            },
+            {
+              "_id": "6193e380069d61205d490dcd",
+              "_tpl": "618178aa1cb55961fa0fdc80",
+              "parentId": "6193e380069d61205d490dcc",
+              "slotId": "mod_muzzle"
+            },
+            {
+              "_id": "6193e380069d61205d490dce",
+              "_tpl": "61816fcad92c473c770215cc",
+              "parentId": "6193e380069d61205d490dcc",
+              "slotId": "mod_sight_front"
+            },
+            {
+              "_id": "6193e380069d61205d490dcf",
+              "_tpl": "61817865d3a39d50044c13a4",
+              "parentId": "6193e380069d61205d490dcb",
+              "slotId": "mod_sight_rear"
+            },
+            {
+              "_id": "6193e380069d61205d490dd0",
+              "_tpl": "61816df1d3a39d50044c139e",
+              "parentId": "6193e380069d61205d490dcb",
+              "slotId": "mod_mount_000"
+            },
+            {
+              "_id": "6193e380069d61205d490dd1",
+              "_tpl": "61816dfa6ef05c2ce828f1ad",
+              "parentId": "6193e380069d61205d490dcb",
+              "slotId": "mod_mount_001"
+            },
+            {
+              "_id": "6193e380069d61205d490dd2",
+              "_tpl": "61825d06d92c473c770215de",
+              "parentId": "6193e380069d61205d490dc8",
+              "slotId": "mod_stock"
+            },
+            {
+              "_id": "6193e380069d61205d490dd3",
+              "_tpl": "61825d136ef05c2ce828f1cc",
+              "parentId": "6193e380069d61205d490dd2",
+              "slotId": "mod_stock_001"
+            },
+            {
+              "_id": "6193e380069d61205d490dd4",
+              "_tpl": "618167616ef05c2ce828f1a8",
+              "parentId": "6193e380069d61205d490dd3",
+              "slotId": "mod_stock"
+            },
+            {
+              "_id": "6193e380069d61205d490dd5",
+              "_tpl": "61825d24d3a39d50044c13af",
+              "parentId": "6193e380069d61205d490dd2",
+              "slotId": "mod_stock_002"
+            },
+            {
+              "_id": "6193e380069d61205d490dd6",
+              "_tpl": "6181688c6c780c1e710c9b04",
+              "parentId": "6193e380069d61205d490dc8",
+              "slotId": "mod_charge"
+            }
+          ]
+        },
+        {
+          "value": "0.05",
+          "id": "60cc7f5ce3d0247e625dab7d",
+          "type": "TraderStanding",
+          "index": 3,
+          "target": "ArtemTrader"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "59c50c8886f7745fed3193bf startedMessageText",
+    "successMessageText": "59c50c8886f7745fed3193bf successMessageText",
+    "traderId": "ArtemTrader",
+    "type": "Elimination"
+  }
+}

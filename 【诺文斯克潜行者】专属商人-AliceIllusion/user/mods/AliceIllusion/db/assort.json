@@ -2193,6 +2193,136 @@
             "_tpl": "5c1cd46f2e22164bef5cfedb",
             "parentId": "fd7d526b0f9f9ee1f7f5d2c3",
             "slotId": "mod_foregrip"
+          },
+          {
+            "_comment": "Fist of Joe",
+            "_id": "9c2dfa5d5fb626f136f17b20",
+            "_tpl": "5c07c60e0db834002330051f",
+            "parentId": "hideout",
+            "slotId": "hideout",
+            "upd": {
+                  "StackObjectsCount": 1,
+                  "UnlimitedCount": false
+              }
+          },
+          {
+            "_id": "027a37775559730e9933bcac",
+            "_tpl": "55d4b9964bdc2d1d4e8b456e",
+            "parentId": "9c2dfa5d5fb626f136f17b20",
+            "slotId": "mod_pistol_grip"
+          },
+          {
+            "_id": "13e8ee6ffe687fd306da6a2b",
+            "_tpl": "55d4887d4bdc2d962f8b4570",
+            "parentId": "9c2dfa5d5fb626f136f17b20",
+            "slotId": "mod_magazine"
+          },
+          {
+            "_id": "8d5306eaebc4196dca86e302",
+            "_tpl": "5c0e2f26d174af02a9625114",
+            "parentId": "9c2dfa5d5fb626f136f17b20",
+            "slotId": "mod_reciever",
+            "upd": {
+              "SpawnedInSession": true
+            }
+          },
+          {
+            "_id": "0fc5cf048755c46c12de377d",
+            "_tpl": "5c0faeddd174af02a962601f",
+            "parentId": "9c2dfa5d5fb626f136f17b20",
+            "slotId": "mod_stock",
+            "upd": {
+              "SpawnedInSession": true
+            }
+          },
+          {
+            "_id": "ca4c4692f3e052135e9460f4",
+            "_tpl": "5c0faf68d174af02a96260b8",
+            "parentId": "9c2dfa5d5fb626f136f17b20",
+            "slotId": "mod_charge",
+            "upd": {
+              "SpawnedInSession": true
+            }
+          },
+          {
+            "_id": "b8ed13070dc435a819359df2",
+            "_tpl": "54527ac44bdc2d36668b4567",
+            "parentId": "13e8ee6ffe687fd306da6a2b",
+            "slotId": "cartridges",
+            "location": 0,
+            "upd": {
+              "StackObjectsCount": 30
+            }
+          },
+          {
+            "_id": "29d4c8f5ee550962d5fc34db",
+            "_tpl": "55d3632e4bdc2d972f8b4569",
+            "parentId": "8d5306eaebc4196dca86e302",
+            "slotId": "mod_barrel"
+          },
+          {
+            "_id": "b7dcf7b43b47d44adb3256d9",
+            "_tpl": "5ae30db85acfc408fb139a05",
+            "parentId": "8d5306eaebc4196dca86e302",
+            "slotId": "mod_handguard"
+          },
+          {
+            "_id": "4ba3669f850133c3efca1fd4",
+            "_tpl": "5ae30bad5acfc400185c2dc4",
+            "parentId": "8d5306eaebc4196dca86e302",
+            "slotId": "mod_sight_rear",
+            "upd": {
+              "Sight": {
+                "ScopesCurrentCalibPointIndexes": [
+                  0
+                ],
+                "ScopesSelectedModes": [
+                  0
+                ],
+                "SelectedScope": 0
+              }
+            }
+          },
+          {
+            "_id": "b342b5f4f81356bb0888a448",
+            "_tpl": "55d4ae6c4bdc2d8b2f8b456e",
+            "parentId": "0fc5cf048755c46c12de377d",
+            "slotId": "mod_stock_002"
+          },
+          {
+            "_id": "07ab50bc29b23795acb8aaae",
+            "_tpl": "5c0fafb6d174af02a96260ba",
+            "parentId": "29d4c8f5ee550962d5fc34db",
+            "slotId": "mod_muzzle"
+          },
+          {
+            "_id": "719700827f74d9dee406b628",
+            "_tpl": "5ae30e795acfc408fb139a0b",
+            "parentId": "29d4c8f5ee550962d5fc34db",
+            "slotId": "mod_gas_block"
+          },
+          {
+            "_id": "6aa7d5565cccf3d1f4844e7c",
+            "_tpl": "637f57a68d137b27f70c4968",
+            "parentId": "b7dcf7b43b47d44adb3256d9",
+            "slotId": "mod_handguard"
+          },
+          {
+            "_id": "694eb8be1392e9e2fec23ef9",
+            "_tpl": "carryhandlescope",
+            "parentId": "4ba3669f850133c3efca1fd4",
+            "slotId": "mod_scope",
+            "upd": {
+              "Sight": {
+                "ScopesCurrentCalibPointIndexes": [
+                  0
+                ],
+                "ScopesSelectedModes": [
+                  0
+                ],
+                "SelectedScope": 0
+              }
+            }
           }
     ],
     "barter_scheme": {
