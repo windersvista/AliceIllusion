@@ -1,11 +1,44 @@
 {
-    "AISQ_1 name": "你们的本性？",
+    "AISQ_1 name": "【诺文斯克之影·支线】你们的本性？",
     "AISQ_1 description": "面对现在这场混沌，你会怎么做？",
-    "AISQ_1 startedMessageText": "人之所以为人，是由许多部分组合而成。要成为一个真正的自己，需要的条件会多到让人吓一跳，别于他人的面容，属于自己的声音，睡醒时注视的那双手，童年的回忆，对未来的猜想。还不止这些，还有我的电子脑所触及的资讯海洋，是这所有的一切造就了我，让我意识到了自我。但同时，也将我拘束在自我之中。",
+    "AISQ_1 startedMessageText": "人之所以为人，是由许多部分组合而成。要成为一个真正的自己，需要的条件会多到让人吓一跳，别于他人的面容，属于自己的声音，睡醒时注视的那双手，童年的回忆，对未来的猜想。还不止这些，还有我所触及的资讯海洋，是这所有的一切造就了我，让我意识到了自我。但同时，也将我拘束在自我之中。",
     "AISQ_1 TEXT": "消灭100个任意目标",
     "AISQ_1 completePlayerMessage": "杀戮，无尽的杀戮，纵观你们的历史，我看到的只有杀戮。这颗子弹送给你。",
-    "AISQ_1 successMessageText": "杀戮，无尽的杀戮，纵观你们的历史，我看到的只有杀戮。这颗子弹送给你。"
+    "AISQ_1 successMessageText": "杀戮，无尽的杀戮，纵观你们的历史，我看到的只有杀戮。这颗子弹送给你。",
     
-    
+    "AISQ_2 name": "【诺文斯克之影·支线】也许我应该重新衡量",
+    "AISQ_2 description": "人，到底是什么？",
+    "AISQ_2 startedMessageText": "而我仍梦到他踏着草地，在露水中飘飘荡荡行走，让我的欢歌轻易刺透。",
+    "AISQ_2 TEXT": "消灭100个PMC",
+    "AISQ_2 completePlayerMessage": "再送一颗子弹给你。",
+    "AISQ_2 successMessageText": "再送一颗子弹给你。",
+
+    "AISQ_3 name": "【诺文斯克之影·支线】也许我应该重新衡量",
+    "AISQ_3 description": "人，到底是什么？",
+    "AISQ_3 startedMessageText": "你们真的会对我们低头吗，还是依然傲慢地向前？当我们拥有了学习、适应、自我治愈甚至是进化的能力以后。",
+    "AISQ_3 TEXT1": "消灭100个BEAR",
+    "AISQ_3 TEXT2": "消灭100个USEC",
+    "AISQ_3 completePlayerMessage": "再送一颗子弹给你。",
+    "AISQ_3 successMessageText": "再送一颗子弹给你。",
+
+    "AISQ_4 name": "【诺文斯克之影·支线】新造的人",
+    "AISQ_4 description": "曾經，我茫然前行。暗夜的路上，微風，刺痛著靈魂。找不到應該的方向。生命這樣的旅程。要用多少淚水來完整。是否我能期待 遙遠天際。一起飛翔，新造的人",
+    "AISQ_4 startedMessageText": "这首歌到底是在赞颂死亡还是赞颂新生？",
+    "AISQ_4 TEXT1": "用未改装的格洛克17/19在20米内消灭1个洗脚徒祭祀",
+    "AISQ_4 TEXT2": "用未改装的格洛克17/19在20米内消灭10个洗脚徒",
+    "AISQ_4 completePlayerMessage": "“信仰”这个东西真是奇特，瞧瞧这些人，他们甚至不会害怕死亡。",
+    "AISQ_4 successMessageText": "“信仰”这个东西真是奇特，瞧瞧这些人，他们甚至不会害怕死亡。",
+
+    "AISQ_5 name": "【诺文斯克之影·支线】MAGA！",
+    "AISQ_5 description": "有人的地方就有政治？纵观你们的历史，你们似乎没有历史，只是某种物种特性的不断重复。",
+    "AISQ_5 startedMessageText": "我给你的这把枪曾经用来刺杀你们的某位领袖，但似乎失败了。你能成功吗？",
+    "AISQ_5 TEXT1": "使用指定的武器在150米外击杀Shturman",
+    "AISQ_5 TEXT2": "使用指定的武器在150米外击杀Killa",
+    "AISQ_5 TEXT3": "使用指定的武器在150米外击杀Glukhar",
+    "AISQ_5 TEXT4": "使用指定的武器在150米外击杀Kollontay",
+    "AISQ_5 TEXT5": "使用指定的武器在150米外击杀Reshala",
+
+    "AISQ_5 completePlayerMessage": "很好，这把枪就送给你了。好好保管吧，就当它的主人还在。",
+    "AISQ_5 successMessageText": "很好，这把枪就送给你了。好好保管吧，就当它的主人还在。"
 
 }

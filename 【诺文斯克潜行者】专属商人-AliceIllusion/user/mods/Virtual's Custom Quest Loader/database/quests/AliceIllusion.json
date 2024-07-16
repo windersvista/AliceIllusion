@@ -1,11 +1,11 @@
 {
-  "INTROART_1": {
+  "AIMQ_1": {
     "QuestName": "Introduction.",
-    "_id": "INTROART_1",
-    "acceptPlayerMessage": "INTROART_1 acceptPlayerMessage",
+    "_id": "AIMQ_1",
+    "acceptPlayerMessage": "AIMQ_1 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
-    "changeQuestMessageText": "INTROART_1 changeQuestMessageText",
-    "completePlayerMessage": "INTROART_1 completePlayerMessage",
+    "changeQuestMessageText": "AIMQ_1 changeQuestMessageText",
+    "completePlayerMessage": "AIMQ_1 completePlayerMessage",
     "conditions": {
       "AvailableForFinish": [
         {
@@ -13,7 +13,7 @@
           "dogtagLevel": 0,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "INTROART_1 TASK1",
+          "id": "AIMQ_1 TASK1",
           "index": 0,
           "isEncoded": false,
           "maxDurability": 100,
@@ -31,7 +31,7 @@
           "dogtagLevel": 0,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "INTROART_1 TASK2",
+          "id": "AIMQ_1 TASK2",
           "index": 1,
           "isEncoded": false,
           "maxDurability": 100,
@@ -60,15 +60,15 @@
       ],
       "Fail": []
     },
-    "declinePlayerMessage": "INTROART_1 declinePlayerMessage",
-    "description": "INTROART_1 description",
-    "failMessageText": "INTROART_1 failMessageText",
-    "image": "/files/quest/icon/INTROART_1thumbnail.png",
+    "declinePlayerMessage": "AIMQ_1 declinePlayerMessage",
+    "description": "AIMQ_1 description",
+    "failMessageText": "AIMQ_1 failMessageText",
+    "image": "/files/quest/icon/AIMQ_1thumbnail.png",
     "instantComplete": false,
     "isKey": false,
     "location": "any",
-    "name": "INTROART_1 name",
-    "note": "INTROART_1 note",
+    "name": "AIMQ_1 name",
+    "note": "AIMQ_1 note",
     "restartable": false,
     "rewards": {
       "Fail": [],
@@ -108,8 +108,8 @@
     },
     "secretQuest": false,
     "side": "Pmc",
-    "startedMessageText": "INTROART_1 startedMessageText",
-    "successMessageText": "INTROART_1 successMessageText",
+    "startedMessageText": "AIMQ_1 startedMessageText",
+    "successMessageText": "AIMQ_1 successMessageText",
     "traderId": "ArtemTrader",
     "type": "PickUp"
   },
@@ -192,7 +192,7 @@
           "status": [
             4
           ],
-          "target": "INTROART_1",
+          "target": "AIMQ_1",
           "visibilityConditions": []
         }
       ],
