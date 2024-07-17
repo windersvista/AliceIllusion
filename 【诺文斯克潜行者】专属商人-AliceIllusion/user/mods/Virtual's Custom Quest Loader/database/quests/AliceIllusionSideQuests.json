@@ -45,7 +45,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_1 TEXT",
+          "id": "AISQ_1 targetText",
           "index": 0,
           "oneSessionOnly": false,
           "parentId": "",
@@ -169,7 +169,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_2 TEXT",
+          "id": "AISQ_2 targetText",
           "index": 0,
           "oneSessionOnly": false,
           "parentId": "",
@@ -292,7 +292,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_3 TEXT1",
+          "id": "AISQ_3 targetText1",
           "index": 0,
           "oneSessionOnly": false,
           "parentId": "",
@@ -337,7 +337,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_3 TEXT2",
+          "id": "AISQ_3 targetText2",
           "index": 0,
           "oneSessionOnly": false,
           "parentId": "",
@@ -480,7 +480,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_4 TEXT1",
+          "id": "AISQ_4 targetText1",
           "index": 0,
           "oneSessionOnly": false,
           "parentId": "",
@@ -518,6 +518,7 @@
                 "value": 1,
                 "weapon": [
                   "5a7ae0c351dfba0017554310",
+                  "5b1fa9b25acfc40018633c01",
                   "63088377b5cd696784087147"
                 ],
                 "weaponCaliber": [],
@@ -530,7 +531,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_4 TEXT2",
+          "id": "AISQ_4 targetText2",
           "index": 0,
           "oneSessionOnly": false,
           "parentId": "",
@@ -592,7 +593,24 @@
           "value": "5"
         },
         {
+          "findInRaid": true,
           "id": "AISQ_4 S3",
+          "index": 2,
+          "items": [
+            {
+              "_id": "AISQ_4 S3I",
+              "_tpl": "59faff1d86f7746c51718c9c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "AISQ_4 S3I",
+          "type": "Item",
+          "value": "5"
+        },
+        {
+          "id": "AISQ_4 S4",
           "index": 3,
           "target": "AliceIllusion",
           "type": "TraderStanding",
@@ -669,69 +687,8 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_5 TEXT1",
+          "id": "AISQ_5 targetText1",
           "index": 0,
-          "oneSessionOnly": false,
-          "parentId": "",
-          "type": "Elimination",
-          "value": 1,
-          "visibilityConditions": []
-        },
-        {
-          "completeInSeconds": 0,
-          "conditionType": "CounterCreator",
-          "counter": {
-            "conditions": [
-              {
-                "bodyPart": [
-                  "Head"
-                ],
-                "compareMethod": ">=",
-                "conditionType": "Kills",
-                "daytime": {
-                  "from": 0,
-                  "to": 0
-                },
-                "distance": {
-                  "compareMethod": ">=",
-                  "value": 150
-                },
-                "dynamicLocale": false,
-                "enemyEquipmentExclusive": [],
-                "enemyEquipmentInclusive": [],
-                "enemyHealthEffects": [],
-                "id": "AISQ_5 req_2_0",
-                "resetOnSessionEnd": false,
-                "savageRole": [
-                  "bossKilla"
-                ],
-                "target": "Savage",
-                "value": 1,
-                "weapon": [
-                  "5c07c60e0db834002330051f"
-                ],
-                "weaponCaliber": [],
-                "weaponModsExclusive": [],
-                "weaponModsInclusive": [
-                  [
-                  "carryhandlescope"
-                  ],
-                  [
-                  "5c0fafb6d174af02a96260ba"
-                  ],
-                  [
-                  "5ae30bad5acfc400185c2dc4"
-                  ]
-              ]
-              }
-            ],
-            "id": "AISQ_5 req_2_1"
-          },
-          "doNotResetIfCounterCompleted": false,
-          "dynamicLocale": false,
-          "globalQuestCounterId": "",
-          "id": "AISQ_5 TEXT2",
-          "index": 1,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Elimination",
@@ -791,7 +748,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_5 TEXT3",
+          "id": "AISQ_5 targetText2",
           "index": 1,
           "oneSessionOnly": false,
           "parentId": "",
@@ -852,7 +809,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_5 TEXT4",
+          "id": "AISQ_5 targetText3",
           "index": 4,
           "oneSessionOnly": false,
           "parentId": "",
@@ -913,7 +870,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_5 TEXT5",
+          "id": "AISQ_5 targetText4",
           "index": 5,
           "oneSessionOnly": false,
           "parentId": "",
@@ -974,7 +931,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_5 TEXT6",
+          "id": "AISQ_5 targetText5",
           "index": 6,
           "oneSessionOnly": false,
           "parentId": "",
@@ -1036,7 +993,24 @@
           "value": "2"
         },
         {
+          "findInRaid": true,
           "id": "AISQ_5 S3",
+          "index": 2,
+          "items": [
+            {
+              "_id": "AISQ_5 S3I",
+              "_tpl": "59faff1d86f7746c51718c9c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "AISQ_5 S3I",
+          "type": "Item",
+          "value": "10"
+        },
+        {
+          "id": "AISQ_5 S4",
           "index": 3,
           "target": "AliceIllusion",
           "type": "TraderStanding",
