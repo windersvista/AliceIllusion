@@ -189,6 +189,21 @@
           "parentId": "",
           "value": 1,
           "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "AISQ_2 AFS2",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "AISQ_1",
+          "visibilityConditions": []
         }
       ],
       "Fail": []
@@ -355,7 +370,7 @@
           "id": "AISQ_3 AFS1",
           "index": 0,
           "parentId": "",
-          "value": 10,
+          "value": 15,
           "visibilityConditions": []
         },
         {
@@ -364,8 +379,8 @@
           "dispersion": 0,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "AISQ_3 S0",
-          "index": 0,
+          "id": "AISQ_3 AFS2",
+          "index": 1,
           "parentId": "",
           "status": [
             4
@@ -546,10 +561,10 @@
           "conditionType": "Level",
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "59a926b186f774753c5479a2",
+          "id": "AISQ_4 AFS1",
           "index": 0,
           "parentId": "",
-          "value": 10,
+          "value": 20,
           "visibilityConditions": []
         }
       ],
@@ -561,7 +576,7 @@
     "image": "/files/quest/icon/AISQthumbnail.png",
     "instantComplete": false,
     "isKey": false,
-    "location": "5704e554d2720bac5b8b456e",
+    "location": "any",
     "name": "AISQ_4 name",
     "note": "AISQ_4 note",
     "restartable": false,
@@ -946,7 +961,7 @@
           "conditionType": "Level",
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "59a926b186f774753c5479a2",
+          "id": "AISQ_5 AFS1",
           "index": 0,
           "parentId": "",
           "value": 20,
@@ -961,7 +976,7 @@
     "image": "/files/quest/icon/AISQthumbnail.png",
     "instantComplete": false,
     "isKey": false,
-    "location": "5704e554d2720bac5b8b456e",
+    "location": "any",
     "name": "AISQ_5 name",
     "note": "AISQ_5 note",
     "restartable": false,

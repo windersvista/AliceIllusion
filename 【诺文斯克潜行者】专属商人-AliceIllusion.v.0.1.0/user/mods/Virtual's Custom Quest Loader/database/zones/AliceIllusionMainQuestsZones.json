@@ -1,0 +1,68 @@
+[
+  {
+    "ZoneId": "AIMQ_LDP_Office",
+    "ZoneName": "AIMQ_LDP_Office",
+    "ZoneLocation": "Sandbox",
+    "ZoneType": "placeitem",
+    "FlareType": "Quest",
+    "Position": {
+      "X": "107.6982",
+      "Y": "32.80912",
+      "Z": "273.1211"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "4",
+      "Y": "4",
+      "Z": "2"
+    }
+  },
+  {
+    "ZoneId": "AIMQ_MG_Office",
+    "ZoneName": "AIMQ_MG_Office",
+    "ZoneLocation": "Sandbox",
+    "ZoneType": "placeitem",
+    "FlareType": "Quest",
+    "Position": {
+      "X": "59.1169",
+      "Y": "30.86673",
+      "Z": "134.6614"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "4",
+      "Y": "4",
+      "Z": "2"
+    }
+  },
+  {
+    "ZoneId": "AIMQ_Terra_Office",
+    "ZoneName": "AIMQ_Terra_Office",
+    "ZoneLocation": "Sandbox",
+    "ZoneType": "placeitem",
+    "FlareType": "Quest",
+    "Position": {
+      "X": "-11.49383",
+      "Y": "29.67147",
+      "Z": "47.52298"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "4",
+      "Y": "4",
+      "Z": "2"
+    }
+  }
+]

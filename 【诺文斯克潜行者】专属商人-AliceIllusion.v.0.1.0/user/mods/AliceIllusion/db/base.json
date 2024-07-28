@@ -56,7 +56,7 @@
     "balance_rub": 5000000,
     "balance_dol": 500000,
     "balance_eur": 500000,
-    "unlockedByDefault": true,
+    "unlockedByDefault": false,
     "discount": 0,
     "discount_end": 0,
     "buyer_up": true,
